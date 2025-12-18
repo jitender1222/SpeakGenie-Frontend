@@ -66,7 +66,7 @@ function HomeScreen({ onNavigate }: NavigationProps): JSX.Element {
     lg:grid-cols-4
   "
         >
-          {[1, 2, 3].map((i) => (
+          {[1, 2, 3, 4].map((i) => (
             <div
               key={i}
               className="min-w-[120px] h-[150px] rounded-xl bg-[#E6EAEE]"
