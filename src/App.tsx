@@ -2,6 +2,7 @@ import { useState, type JSX } from "react";
 import HomeScreen from "./screen/HomeScreen";
 import type { Screen } from "./types";
 import NowPlayingScreen from "./screen/NowPlayingScreen";
+import QuizScreen from "./screen/QuizScreen";
 
 export default function App(): JSX.Element {
   const [screen, setScreen] = useState<Screen>("home");
@@ -20,6 +21,7 @@ export default function App(): JSX.Element {
         {screen === "player" && (
           <NowPlayingScreen onBack={() => setScreen("home")} />
         )}
+        {screen === "quiz" && <QuizScreen onBack={() => setScreen("home")} />}
       </div>
     </div>
   );
