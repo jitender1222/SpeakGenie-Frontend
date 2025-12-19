@@ -16,7 +16,7 @@ function NowPlayingScreen({ onBack }: BackProps): JSX.Element {
       </p>
 
       <div className="rounded-2xl bg-[#E8F7EF] p-4 space-y-4">
-        <div className="h-[210px] rounded-xl bg-[#DCE3E8]">Hello world</div>
+        <div className="h-[210px] rounded-xl bg-[#DCE3E8]" />
         <div className="space-y-1">
           <h2 className="text-[16px] font-semibold">
             The Melody of Friendship
