@@ -30,7 +30,7 @@ Accessibility and responsiveness were considered within the scope of the given d
 
 ## Project Structure
 
-src/
+```src/
 ├── components/
 │ ├── home/
 │ │ ├── HomeHeader.tsx
@@ -53,6 +53,7 @@ src/
 │
 └── assets/
 └── images
+```
 
 ## Responsiveness Strategy
 
