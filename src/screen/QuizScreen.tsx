@@ -28,7 +28,10 @@ function QuizScreen({ onBack }: BackProps): JSX.Element {
 
   return (
     <div className="px-4 pt-4 space-y-5">
-      <button onClick={onBack} className="text-[13px] text-gray-600">
+      <button
+        onClick={onBack}
+        className="cursor-pointer text-[13px] text-gray-600"
+      >
         ← Back
       </button>
 
@@ -67,7 +70,7 @@ function QuizScreen({ onBack }: BackProps): JSX.Element {
               <button
                 key={level.key}
                 onClick={() => setSelectedDifficulty(level.key)}
-                className={`cursor-pointer
+                className={`cursor-pointer hover:bg-[#3CCB7F]
                   rounded-xl p-3 text-left transition
                   ${isSelected ? "bg-[#3CCB7F] text-white" : "bg-white"}
                 `}

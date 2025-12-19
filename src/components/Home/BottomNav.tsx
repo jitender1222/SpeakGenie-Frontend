@@ -11,14 +11,15 @@ export default function BottomNav({ onNavigate }: BottomNavProps) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t">
       <div className="flex justify-around py-2 text-[11px] text-gray-600">
-        <NavItem icon={Home} label="Home" />
+        <NavItem className="hover:text-gray-500" icon={Home} label="Home" />
         <NavItem
+          className="hover:text-gray-500"
           icon={BookOpen}
           label="Learn"
           onClick={() => onNavigate("quiz")}
         />
-        <NavItem icon={Phone} label="Call" />
-        <NavItem icon={User} label="Profile" />
+        <NavItem className="hover:text-gray-500" icon={Phone} label="Call" />
+        <NavItem className="hover:text-gray-500" icon={User} label="Profile" />
       </div>
     </div>
   );
