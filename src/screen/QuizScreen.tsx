@@ -67,7 +67,7 @@ function QuizScreen({ onBack }: BackProps): JSX.Element {
               <button
                 key={level.key}
                 onClick={() => setSelectedDifficulty(level.key)}
-                className={`
+                className={`cursor-pointer
                   rounded-xl p-3 text-left transition
                   ${isSelected ? "bg-[#3CCB7F] text-white" : "bg-white"}
                 `}
@@ -89,9 +89,11 @@ function QuizScreen({ onBack }: BackProps): JSX.Element {
         <button
           disabled={!selectedDifficulty}
           onClick={() => {
+            alert("Thank you for creating the quiz ");
             console.log("Generate quiz with difficulty:", selectedDifficulty);
           }}
           className="
+          cursor-pointer
             w-full rounded-2xl py-3 text-[14px] font-medium transition
             bg-[#3CCB7F] text-white
             disabled:bg-gray-300 disabled:cursor-not-allowed

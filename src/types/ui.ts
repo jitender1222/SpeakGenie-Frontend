@@ -8,4 +8,5 @@ export interface SectionProps {
 
 export interface AIAvatarProps {
   name: string;
+  img: string;
 }
